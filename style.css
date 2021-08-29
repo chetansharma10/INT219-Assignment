@@ -1,0 +1,158 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content:space-between ;
+}
+
+.leftContainer{
+    width: 60%;
+    height:100%;
+    
+    background-image: url("./z.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    
+}
+.rightContainer{
+    width: 40%;
+    height:100%;
+    background-color: white;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.rightContainer h3{
+    font-size: 35px;
+    font-family: 'Secular One', sans-serif;
+
+}
+.rightContainer form{
+    width:250px;
+    height:50vh;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+form input{
+    width:100%;
+    height:30px;
+    padding:10px;
+    margin:10px;
+}
+form .selection{
+    width:100%;
+    height:50px;
+    padding:10px;
+    margin:10px;
+    background-color: #757575bb;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+form .selection select{
+  
+    height:50px;
+    padding:10px;
+    margin:10px;
+}
+form a{
+    text-decoration: none;
+    width:100px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-family: 'Secular One', sans-serif;
+    border-radius: 5px;
+
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form small{
+    font-family: sans-serif;
+}
+form small strong{
+    color:#FF8C00;
+}
+
+.checkbox{
+    width:100%;
+    height:100px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-family:sans-serif;
+    font-size: 15px;
+    padding:10px;
+}
+.checkbox input{
+    width:20px;
+    height:20px;
+    padding:10px;
+    margin:10px;
+}
+
+.Success{
+    width:100%;
+    height:100vh;
+    background-color: #E1F4E5;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+  
+}
+.Success .img{
+    background-image: url("./success.gif");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:60vh;
+
+}
+.Success h4{
+    font-family: sans-serif;
+}
+@media screen and (max-width:612px){
+    .leftContainer{
+        display:none;
+    }
+    .rightContainer{
+        justify-content: center;
+        align-items: center;
+        display:flex;
+        width:100%;
+    }
+}
+
+@media screen and (max-width:334px){
+   
+    form input{
+        outline: none;
+        border: none;
+        border-bottom: 1px solid lightgray;
+    }
+}
